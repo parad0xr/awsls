@@ -4,6 +4,7 @@ go 1.17
 
 require (
 	cloud.google.com/go/compute v1.9.0
+	cloud.google.com/go/storage v1.22.1
 	github.com/apex/log v1.9.0
 	github.com/aws/aws-sdk-go v1.38.43
 	github.com/aws/aws-sdk-go-v2 v1.6.0
@@ -124,7 +125,6 @@ require (
 require (
 	cloud.google.com/go v0.102.1 // indirect
 	cloud.google.com/go/iam v0.3.0 // indirect
-	cloud.google.com/go/storage v1.22.1 // indirect
 	github.com/agext/levenshtein v1.2.2 // indirect
 	github.com/apparentlymart/go-cidr v1.0.1 // indirect
 	github.com/apparentlymart/go-textseg v1.0.0 // indirect
