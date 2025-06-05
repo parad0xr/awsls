@@ -34,7 +34,7 @@ func GenerateResourceTypesWithTagsList(resourceTypes []string, outputPath string
 
 	provider, ok := providers[awsClientKey]
 	if !ok {
-		return nil, fmt.Errorf("Terraform AWS provider not found: %s", err)
+		return nil, fmt.Errorf("Terraform AWS provider not found")
 	}
 
 	defer func() {
