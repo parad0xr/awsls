@@ -16,6 +16,12 @@ please open an issue or write me on [Twitter](https://twitter.com/jckuester).
 
 Happy listing!
 
+### Experimental: GCP support
+
+The repository now includes a small helper binary `gcpls` to list Compute Engine
+instances in a Google Cloud project. Run `go run ./gcp -project <project-id>` to
+list all instances across zones, or specify a zone via `-zone`.
+
 **Note:** If you're also looking for an easy but powerful way to delete AWS resources, pipe the output of `awsls` into its new sibling
 [`awsrm`](https://github.com/jckuester/awsrm) via Unix-pipes and use well-known standard tooling such as `grep` for filtering.
 
