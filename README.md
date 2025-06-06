@@ -18,7 +18,14 @@ Happy listing!
 
 ### Experimental: GCP support
 
-The repository now includes a small helper binary `gcpls` to list resources in a Google Cloud project. By default it lists Compute Engine instances. Pass the `-buckets` flag to list Cloud Storage buckets as well. Run `go run ./gcp -project <project-id>` to list all instances across zones, or specify a zone via `-zone`.
+The repository now includes a small helper command `gcpls` to list resources in a Google Cloud project.
+
+```bash
+go run ./gcp -project <project-id> [-zone <zone>] [-buckets]
+```
+
+By default it prints Compute Engine instances across all zones. Use `-zone` to restrict
+listing to a single zone and `-buckets` to additionally list Cloud Storage buckets.
 
 **Note:** If you're also looking for an easy but powerful way to delete AWS resources, pipe the output of `awsls` into its new sibling
 [`awsrm`](https://github.com/jckuester/awsrm) via Unix-pipes and use well-known standard tooling such as `grep` for filtering.
